@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import { Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
+import RecipeDetails from './components/Recipe/RecipeDetails'
 import Home from './pages/home/Home'
 import Create from './pages/create/Create'
 import Search from './pages/search/Search'
@@ -18,8 +19,11 @@ function App() {
         <Route path="/search">
           <Search />
         </Route>
-        <Route path="/recipe">
+        <Route exact path="/recipe">
           <Recipe />
+        </Route>
+        <Route path="/recipe/:id">
+          <RecipeDetails />
         </Route>
         <Route path="/">
           <Home />
