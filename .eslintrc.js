@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -13,6 +13,12 @@ module.exports = {
   },
   plugins: ['react', 'prettier'],
   rules: {
+    'react/jsx-one-expression-per-line': [
+      'off',
+      {
+        allow: 'none',
+      },
+    ],
     semi: 0,
     'comma-dangle': 0,
     'prettier/prettier': 'error',
