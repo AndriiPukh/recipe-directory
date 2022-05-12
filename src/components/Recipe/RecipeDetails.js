@@ -19,8 +19,7 @@ function RecipeDetails() {
         <>
           <h2 className="page-title">{recipe.title}</h2>
           <p>
-            Takes
-            {recipe.cookingTime}
+            Takes: {recipe.cookingTime}
             to cook
           </p>
           <ul>
