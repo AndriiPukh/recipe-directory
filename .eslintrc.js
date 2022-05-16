@@ -64,5 +64,18 @@ module.exports = {
         },
       },
     ],
+    'jsx-a11y/no-static-element-interactions': [
+      'off',
+      {
+        handlers: [
+          'onClick',
+          'onMouseDown',
+          'onMouseUp',
+          'onKeyPress',
+          'onKeyDown',
+          'onKeyUp',
+        ],
+      },
+    ],
   },
 }
